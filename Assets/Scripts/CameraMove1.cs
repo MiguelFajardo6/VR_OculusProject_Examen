@@ -26,14 +26,14 @@ public class CameraMove1 : MonoBehaviour
     void Update()
     {
         //para el movimiento
-        Vector2 userControl = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        float cameraRotation = cameraTransform.eulerAngles.y;
-        Vector3 camerarotation = Quaternion.Euler(new Vector3(0, 90, 0)) * cameraTransform.forward;
-        userDirection = (camerarotation * Input.GetAxis("Horizontal") + cameraTransform.forward * Input.GetAxis("Vertical")).normalized;
+        //Vector2 userControl = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        //float cameraRotation = cameraTransform.eulerAngles.y;
+        //Vector3 camerarotation = Quaternion.Euler(new Vector3(0, 90, 0)) * cameraTransform.forward;
+        //userDirection = (camerarotation * Input.GetAxis("Horizontal") + cameraTransform.forward * Input.GetAxis("Vertical")).normalized;
         //
-        userCharacter.Move(userDirection * Time.deltaTime * userSpeed);
+        //userCharacter.Move(userDirection * Time.deltaTime * userSpeed);
         
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || OVRInput.GetDown(OVRInput.Button.One))
         {
             GameObject newBullet = Instantiate(bullet, bulletStart.transform.position, bulletStart.rotation);
             Rigidbody bulletforce = newBullet.GetComponent<Rigidbody>();

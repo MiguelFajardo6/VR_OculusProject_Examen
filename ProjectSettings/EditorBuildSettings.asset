@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Practica5_Jesus_Fajardov3.unity
     guid: b9c7a957ac7c93540a276d4012fa066c
+  - enabled: 1
+    path: Assets/Scenes/DeadScene.unity
+    guid: d9341e7e82110eb49b2294a4bf115264
+  - enabled: 1
+    path: Assets/Scenes/InitScene.unity
+    guid: 8ec4094478131114484f4d5a9c5c2ce3
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: cc396dd5b1cc943479ba6732d236e917
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c1221cdd42ba09e458b6dc80e0e5d76e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d2240552bae1f8446a4e66e66367b346, type: 2}
